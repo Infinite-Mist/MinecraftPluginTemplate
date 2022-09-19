@@ -1,0 +1,22 @@
+#Name of plugin
+name: MinecraftPluginTemplate
+version: ${project.version}
+#Main class location
+main: me.infinitemist.plugintemplate.Main
+api-version: "1.13"
+authors: [Mist, Pustinek]
+description: Mainly for use by Infinite_Mist[Inspired by Pustinek], feel free to use but if you want me to add sections for users to change before they begin coding message me :)
+commands:
+  plugintemplate:
+    description: 'for all the commands use /plugintemplate help'
+    usage: 'plugintemplate had an issue, check console for errors.'
+    aliases: []
+permissions:
+  plugintemplate.*:
+    description: 'Give access to all commands of plugintemplate'
+    default: op
+    children:
+      plugintemplate.reload: true
+  plugintemplate.reload:
+    description: 'reload config files'
+    default: op
